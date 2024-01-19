@@ -17,16 +17,6 @@
   "can_hide": false,
   "can_dive": false,
   "weapons": [2, 6],
-  "damage_table": {
-    "Artillery Cannon": 70,
-    "Bazooka": 55,
-    "Light Tank Cannon": 55,
-    "Machine Gun": 5,
-    "Medium Tank Cannon": 85,
-    "Rockets": 80,
-    "Tank Machine Gun": 6,
-    "Vulcan Cannon": 25
-  },
   "can_carry": false,
   "carrying_types": [],
   "carrying_size": 0,

@@ -33,10 +33,6 @@
       "maxItems": 2,
       "description": "Uses index of enum/weapon as an id reference. Uses -1 for null."
     },
-    "damage_table": {
-      "type": "object",
-      "additionalProperties": { "type": "integer" }
-    },
     "can_carry": { "type": "boolean" },
     "carrying_types": {
       "type": "array",
@@ -65,7 +61,6 @@
     "can_hide",
     "can_dive",
     "weapons",
-    "damage_table",
     "can_carry",
     "carrying_types",
     "carrying_size",

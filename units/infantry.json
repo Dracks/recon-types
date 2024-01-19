@@ -17,13 +17,6 @@
   "can_hide": false,
   "can_dive": false,
   "weapons": [3, -1],
-  "damage_table": {
-    "Artillery Cannon": 90,
-    "Machine Gun": 55,
-    "Rockets": 90,
-    "Tank Machine Gun": 70,
-    "Vulcan Cannon": 105
-  },
   "can_carry": false,
   "carrying_types": [],
   "carrying_size": 0,
