@@ -1,67 +1,74 @@
 {
-  "$id": "https://codename-recon.com/schema/unit.json",
+  "$id": "http://localhost:3000/schema/unit.json",
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Unit",
   "type": "object",
   "properties": {
-    "name": { "type": "string", "pattern": "^([A-Z]|_)+$" },
+    "name": { "$ref": "/schema/enum.json#/definitions/unit" },
     "health": { "type": "integer", "minimum": 0, "maximum": 100 },
-    "movement_points": { "type": "integer", "minimum": 0 },
+    "mp": { "type": "integer", "minimum": 0, "description": "movement_points" },
     "ammo": { "type": "integer", "minimum": -1 },
     "fuel": { "type": "integer", "minimum": 0 },
-    "daily_fuel_decay": { "type": "integer", "minimum": 0 },
+    "turn_fuel": { "type": "integer", "minimum": 0 },
+    "hidden_turn_fuel": { "type": "integer", "minimum": 0 },
     "vision": { "type": "integer", "minimum": 0 },
     "min_range": { "type": "integer", "minimum": 0 },
     "max_range": { "type": "integer", "minimum": 0 },
-    "movement_type": { "type": "integer" },
+    "movement_type": {
+      "type": "integer",
+      "description": "Uses index of enum/movement_type as an id reference.",
+      "minimum": 0,
+      "maximum": 7
+    },
     "cost": { "type": "integer", "minimum": 0 },
+    "can_supply": { "type": "boolean" },
     "can_capture": { "type": "boolean" },
     "can_move_and_attack": { "type": "boolean" },
     "can_hide": { "type": "boolean" },
     "can_dive": { "type": "boolean" },
-    "weapons": { "type": "array", "items": { "$ref": "#/definitions/weapon" } },
+    "weapons": {
+      "type": "array",
+      "items": { "type": "integer", "minimum": -1, "maximum": 7 },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "Uses index of enum/weapon as an id reference. Uses -1 for null."
+    },
     "damage_table": {
       "type": "object",
       "additionalProperties": { "type": "integer" }
     },
-    "can_load": { "type": "boolean" },
-    "carrying_types": { "type": ["null", "array"] },
-    "carrying_size": { "type": "integer" },
+    "can_carry": { "type": "boolean" },
+    "carrying_types": {
+      "type": "array",
+      "items": { "type": "integer", "minimum": 0, "maximum": 24 },
+      "description": "Uses index of enum/unit as an id reference."
+    },
+    "carrying_size": { "type": "integer", "minimum": 0 },
     "description": { "type": "string" }
   },
   "required": [
     "name",
     "health",
-    "movement_points",
+    "mp",
     "ammo",
     "fuel",
-    "daily_fuel_decay",
+    "turn_fuel",
+    "hidden_turn_fuel",
     "vision",
     "min_range",
     "max_range",
     "movement_type",
     "cost",
+    "can_supply",
     "can_capture",
     "can_move_and_attack",
-    "can_load",
+    "can_hide",
+    "can_dive",
     "weapons",
     "damage_table",
+    "can_carry",
     "carrying_types",
     "carrying_size",
     "description"
-  ],
-  "definitions": {
-    "weapon": {
-      "enum": [
-        "Artillery Cannon",
-        "Bazooka",
-        "Light Tank Cannon",
-        "Machine Gun",
-        "Medium Tank Cannon",
-        "Rockets",
-        "Tank Machine Gun",
-        "Vulcan Cannon"
-      ]
-    }
-  }
+  ]
 }

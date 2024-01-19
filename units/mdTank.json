@@ -1,19 +1,22 @@
 {
-  "name": "MEDIUM_TANK",
+  "name": "MD_TANK",
   "health": 100,
-  "movement_points": 5,
+  "mp": 5,
   "ammo": 8,
   "fuel": 50,
-  "daily_fuel_decay": 0,
+  "turn_fuel": 0,
+  "hidden_turn_fuel": 0,
   "vision": 1,
   "min_range": 1,
   "max_range": 1,
-  "movement_type": 1,
+  "movement_type": 2,
   "cost": 16000,
+  "can_supply": false,
   "can_capture": false,
   "can_move_and_attack": true,
-  "can_load": false,
-  "weapons": ["Medium Tank Cannon", "Tank Machine Gun"],
+  "can_hide": false,
+  "can_dive": false,
+  "weapons": [4, 6],
   "damage_table": {
     "Artillery Cannon": 45,
     "Bazooka": 15,
@@ -24,7 +27,8 @@
     "Tank Machine Gun": 1,
     "Vulcan Cannon": 10
   },
-  "carrying_types": null,
+  "can_carry": false,
+  "carrying_types": [],
   "carrying_size": 0,
   "description": "MEDIUM_TANK_DESCRIPTION"
 }

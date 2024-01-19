@@ -1,19 +1,22 @@
 {
-  "name": "LIGHT_TANK",
+  "name": "TANK",
   "health": 100,
-  "movement_points": 6,
+  "mp": 6,
   "ammo": 9,
   "fuel": 70,
-  "daily_fuel_decay": 0,
+  "turn_fuel": 0,
+  "hidden_turn_fuel": 0,
   "vision": 3,
   "min_range": 1,
   "max_range": 1,
-  "movement_type": 1,
+  "movement_type": 2,
   "cost": 7000,
+  "can_supply": false,
   "can_capture": false,
   "can_move_and_attack": true,
-  "can_load": false,
-  "weapons": ["Light Tank Cannon", "Tank Machine Gun"],
+  "can_hide": false,
+  "can_dive": false,
+  "weapons": [2, 6],
   "damage_table": {
     "Artillery Cannon": 70,
     "Bazooka": 55,
@@ -24,7 +27,8 @@
     "Tank Machine Gun": 6,
     "Vulcan Cannon": 25
   },
-  "carrying_types": null,
+  "can_carry": false,
+  "carrying_types": [],
   "carrying_size": 0,
-  "description": "LIGHT_TANK_DESCRIPTION"
+  "description": "TANK_DESCRIPTION"
 }
