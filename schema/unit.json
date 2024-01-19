@@ -1,0 +1,67 @@
+{
+  "$id": "https://codename-recon.com/schema/unit.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Unit",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "pattern": "^([A-Z]|_)+$" },
+    "health": { "type": "integer", "minimum": 0, "maximum": 100 },
+    "movement_points": { "type": "integer", "minimum": 0 },
+    "ammo": { "type": "integer", "minimum": -1 },
+    "fuel": { "type": "integer", "minimum": 0 },
+    "daily_fuel_decay": { "type": "integer", "minimum": 0 },
+    "vision": { "type": "integer", "minimum": 0 },
+    "min_range": { "type": "integer", "minimum": 0 },
+    "max_range": { "type": "integer", "minimum": 0 },
+    "movement_type": { "type": "integer" },
+    "cost": { "type": "integer", "minimum": 0 },
+    "can_capture": { "type": "boolean" },
+    "can_move_and_attack": { "type": "boolean" },
+    "can_hide": { "type": "boolean" },
+    "can_dive": { "type": "boolean" },
+    "weapons": { "type": "array", "items": { "$ref": "#/definitions/weapon" } },
+    "damage_table": {
+      "type": "object",
+      "additionalProperties": { "type": "integer" }
+    },
+    "can_load": { "type": "boolean" },
+    "carrying_types": { "type": ["null", "array"] },
+    "carrying_size": { "type": "integer" },
+    "description": { "type": "string" }
+  },
+  "required": [
+    "name",
+    "health",
+    "movement_points",
+    "ammo",
+    "fuel",
+    "daily_fuel_decay",
+    "vision",
+    "min_range",
+    "max_range",
+    "movement_type",
+    "cost",
+    "can_capture",
+    "can_move_and_attack",
+    "can_load",
+    "weapons",
+    "damage_table",
+    "carrying_types",
+    "carrying_size",
+    "description"
+  ],
+  "definitions": {
+    "weapon": {
+      "enum": [
+        "Artillery Cannon",
+        "Bazooka",
+        "Light Tank Cannon",
+        "Machine Gun",
+        "Medium Tank Cannon",
+        "Rockets",
+        "Tank Machine Gun",
+        "Vulcan Cannon"
+      ]
+    }
+  }
+}

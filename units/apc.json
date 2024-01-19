@@ -1,0 +1,30 @@
+{
+  "name": "APC",
+  "health": 100,
+  "movement_points": 6,
+  "ammo": 0,
+  "fuel": 70,
+  "daily_fuel_decay": 0,
+  "vision": 1,
+  "min_range": 0,
+  "max_range": 0,
+  "movement_type": 1,
+  "cost": 5000,
+  "can_capture": false,
+  "can_move_and_attack": false,
+  "can_load": true,
+  "weapons": [],
+  "damage_table": {
+    "Artillery Cannon": 70,
+    "Bazooka": 75,
+    "Light Tank Cannon": 75,
+    "Machine Gun": 14,
+    "Medium Tank Cannon": 95,
+    "Rockets": 75,
+    "Tank Machine Gun": 45,
+    "Vulcan Cannon": 50
+  },
+  "carrying_types": [6, 7],
+  "carrying_size": 1,
+  "description": "APC_DESCRIPTION"
+}

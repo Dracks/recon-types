@@ -1,0 +1,30 @@
+{
+  "name": "ANTI_AIR",
+  "health": 100,
+  "movement_points": 6,
+  "ammo": 9,
+  "fuel": 60,
+  "daily_fuel_decay": 0,
+  "vision": 2,
+  "min_range": 1,
+  "max_range": 1,
+  "movement_type": 1,
+  "cost": 8000,
+  "can_capture": false,
+  "can_move_and_attack": true,
+  "can_load": false,
+  "weapons": ["Vulcan Cannon"],
+  "damage_table": {
+    "Artillery Cannon": 75,
+    "Bazooka": 65,
+    "Light Tank Cannon": 85,
+    "Machine Gun": 5,
+    "Medium Tank Cannon": 105,
+    "Rockets": 85,
+    "Tank Machine Gun": 4,
+    "Vulcan Cannon": 45
+  },
+  "carrying_types": null,
+  "carrying_size": 0,
+  "description": "ANTI_AIR_DESCRIPTION"
+}

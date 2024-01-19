@@ -1,0 +1,30 @@
+{
+  "name": "RECON",
+  "health": 100,
+  "movement_points": 8,
+  "ammo": -1,
+  "fuel": 80,
+  "daily_fuel_decay": 0,
+  "vision": 5,
+  "min_range": 1,
+  "max_range": 1,
+  "movement_type": 2,
+  "cost": 4000,
+  "can_capture": false,
+  "can_move_and_attack": true,
+  "can_load": false,
+  "weapons": ["Tank Machine Gun"],
+  "damage_table": {
+    "Artillery Cannon": 80,
+    "Bazooka": 85,
+    "Light Tank Cannon": 85,
+    "Machine Gun": 15,
+    "Medium Tank Cannon": 105,
+    "Rockets": 90,
+    "Tank Machine Gun": 35,
+    "Vulcan Cannon": 60
+  },
+  "carrying_types": null,
+  "carrying_size": 0,
+  "description": "RECON_DESCRIPTION"
+}

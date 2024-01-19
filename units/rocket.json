@@ -1,0 +1,30 @@
+{
+  "name": "ROCKET",
+  "health": 100,
+  "movement_points": 5,
+  "ammo": 6,
+  "fuel": 50,
+  "daily_fuel_decay": 0,
+  "vision": 1,
+  "min_range": 3,
+  "max_range": 5,
+  "movement_type": 2,
+  "cost": 15000,
+  "can_capture": false,
+  "can_move_and_attack": false,
+  "can_load": false,
+  "weapons": ["Rockets"],
+  "damage_table": {
+    "Artillery Cannon": 80,
+    "Bazooka": 85,
+    "Light Tank Cannon": 85,
+    "Machine Gun": 25,
+    "Medium Tank Cannon": 95,
+    "Rockets": 75,
+    "Tank Machine Gun": 55,
+    "Vulcan Cannon": 55
+  },
+  "carrying_types": null,
+  "carrying_size": 0,
+  "description": "ROCKET_DESCRIPTION"
+}

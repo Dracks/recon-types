@@ -1,0 +1,30 @@
+{
+  "name": "MEDIUM_TANK",
+  "health": 100,
+  "movement_points": 5,
+  "ammo": 8,
+  "fuel": 50,
+  "daily_fuel_decay": 0,
+  "vision": 1,
+  "min_range": 1,
+  "max_range": 1,
+  "movement_type": 1,
+  "cost": 16000,
+  "can_capture": false,
+  "can_move_and_attack": true,
+  "can_load": false,
+  "weapons": ["Medium Tank Cannon", "Tank Machine Gun"],
+  "damage_table": {
+    "Artillery Cannon": 45,
+    "Bazooka": 15,
+    "Light Tank Cannon": 15,
+    "Machine Gun": 1,
+    "Medium Tank Cannon": 50,
+    "Rockets": 50,
+    "Tank Machine Gun": 1,
+    "Vulcan Cannon": 10
+  },
+  "carrying_types": null,
+  "carrying_size": 0,
+  "description": "MEDIUM_TANK_DESCRIPTION"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "ARTILLERY",
+  "health": 100,
+  "movement_points": 5,
+  "ammo": 9,
+  "fuel": 50,
+  "daily_fuel_decay": 0,
+  "vision": 1,
+  "min_range": 2,
+  "max_range": 3,
+  "movement_type": 1,
+  "cost": 6000,
+  "can_capture": false,
+  "can_move_and_attack": false,
+  "can_load": false,
+  "weapons": ["Artillery Cannon"],
+  "damage_table": {
+    "Artillery Cannon": 75,
+    "Bazooka": 70,
+    "Light Tank Cannon": 70,
+    "Machine Gun": 15,
+    "Medium Tank Cannon": 105,
+    "Rockets": 80,
+    "Tank Machine Gun": 45,
+    "Vulcan Cannon": 50
+  },
+  "carrying_types": null,
+  "carrying_size": 0,
+  "description": "ARTILLERY_DESCRIPTION"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "MECH",
+  "health": 100,
+  "movement_points": 2,
+  "ammo": 3,
+  "fuel": 70,
+  "daily_fuel_decay": 0,
+  "vision": 2,
+  "min_range": 1,
+  "max_range": 1,
+  "movement_type": 7,
+  "cost": 2500,
+  "can_capture": true,
+  "can_move_and_attack": true,
+  "can_load": false,
+  "weapons": ["Bazooka", "Machine Gun"],
+  "damage_table": {
+    "Artillery Cannon": 90,
+    "Machine Gun": 55,
+    "Rockets": 90,
+    "Tank Machine Gun": 70,
+    "Vulcan Cannon": 105
+  },
+  "carrying_types": [],
+  "carrying_size": 0,
+  "description": "MECH_DESCRIPTION"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "INFANTRY",
+  "health": 100,
+  "movement_points": 3,
+  "ammo": -1,
+  "fuel": 99,
+  "daily_fuel_decay": 0,
+  "vision": 2,
+  "min_range": 1,
+  "max_range": 1,
+  "movement_type": 6,
+  "cost": 1000,
+  "can_capture": true,
+  "can_move_and_attack": true,
+  "can_load": false,
+  "weapons": ["Machine Gun"],
+  "damage_table": {
+    "Artillery Cannon": 90,
+    "Machine Gun": 55,
+    "Rockets": 90,
+    "Tank Machine Gun": 70,
+    "Vulcan Cannon": 105
+  },
+  "carrying_types": null,
+  "carrying_size": 0,
+  "description": "INFANTRY_DESCRIPTION"
+}
