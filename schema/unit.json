@@ -30,6 +30,7 @@
     "min_range": { "type": "integer", "minimum": 0 },
     "max_range": { "type": "integer", "minimum": 0 },
     "can_supply": { "type": "boolean" },
+    "can_repair": { "type": "boolean" },
     "can_capture": { "type": "boolean" },
     "can_move_and_attack": { "type": "boolean" },
     "can_hide": { "type": "boolean" },
@@ -37,7 +38,7 @@
     "can_carry": { "type": "boolean" },
     "carrying_types": {
       "type": "array",
-      "items": { "type": "integer", "minimum": 0, "maximum": 24 },
+      "items": { "type": "integer", "minimum": 0, "maximum": 23 },
       "description": "Uses index of enum/unit as an id reference."
     },
     "carrying_size": { "type": "integer", "minimum": 0 }

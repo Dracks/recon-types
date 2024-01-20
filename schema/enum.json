@@ -19,7 +19,7 @@
         "ANTI_AIR",
         "APC",
         "ARTILLERY",
-        "BCOPTER",
+        "B-COPTER",
         "BATTLESHIP",
         "BLACK_BOAT",
         "BLACK_BOMB",
@@ -31,7 +31,7 @@
         "LANDER",
         "MD_TANK",
         "MECH",
-        "MEGATANK",
+        "MEGA_TANK",
         "MISSILE",
         "NEOTANK",
         "PIPERUNNER",
@@ -39,7 +39,7 @@
         "ROCKET",
         "STEALTH",
         "SUB",
-        "TCOPTER",
+        "T-COPTER",
         "TANK"
       ]
     },
