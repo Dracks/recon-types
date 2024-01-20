@@ -5,6 +5,7 @@
   "type": "object",
   "properties": {
     "name": { "$ref": "/schema/enum.json#/definitions/terrain_sprite" },
+    "description": { "type": "string" },
     "terrain": {
       "type": "integer",
       "description": "Uses index of enum/terrain as an id reference.",
@@ -24,32 +25,15 @@
       "type": "integer",
       "description": "0 = neutral, all other numbers coorespond to player number",
       "minimum": 0
-    },
-    "description": { "type": "string" }
+    }
   },
   "required": [
     "name",
+    "description",
+    "terrain",
+    "defense",
     "health",
-    "mp",
-    "ammo",
-    "fuel",
-    "turn_fuel",
-    "hidden_turn_fuel",
-    "vision",
-    "min_range",
-    "max_range",
-    "movement_type",
-    "cost",
-    "can_supply",
     "can_capture",
-    "can_move_and_attack",
-    "can_hide",
-    "can_dive",
-    "weapons",
-    "damage_table",
-    "can_carry",
-    "carrying_types",
-    "carrying_size",
-    "description"
+    "owner"
   ]
 }
